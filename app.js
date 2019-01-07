@@ -6,7 +6,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('*', function(req, res) {
-	res.sendFile(__dirname + "/" + "home.html")
+	res.sendFile(__dirname + "/public/" + "home.html")
 });
 
 var server = app.listen(8080, function() {
