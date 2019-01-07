@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>积分计算器</title>
+		<meta charset="utf-8">
+		<!-- 引入 Bootstrap -->
+		<link href="bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+		<script type="text/javascript" src="compute.js"></script>
+	</head>
+
+	<body>
+
+	
+	<div class="container">
+	</div>
+	<div class="container" ng-app="myApp" ng-controller="myCtr">
+		<p class="text-center text-info">输入胜者与败者的分数 </p>
+		<div class="container container-center">
+			<form role="form">
+				<div class="form-group">
+					<label for="name">胜者:</label><input type="text" ng-model="winnerScore" placeholder="胜者的分数">
+				</div>
+				<div class="form-group">
+					<label for="name">败者:</label><input type="text" ng-model="loserScore" placeholder="败者的分数">
+				</div>
+				<input class="btn btn-primary" type="button" value="计算" ng-click="calculate()">
+			 	<input class="btn btn-warning" type="reset" value="重置" ng-click="reset()">
+			</form>
+		</div>
+		<div class="container container-center">
+			<div>
+				<p>{{winner}}  {{winnerGet}}</p>
+			</div>
+			<div>
+				<p>{{losser}}  {{loserLose}}</p>
+			</div>
+		</div>
+		
+	</div>
+
+	</body>
+</html>
