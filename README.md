@@ -2,8 +2,8 @@
 website version of pointer computer
 
 ## Usage
-npm init
-npm install express --save
+- npm init
+- npm install express --save
 
 run `node app.js`
 
