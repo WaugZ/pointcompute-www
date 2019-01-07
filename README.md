@@ -2,9 +2,10 @@
 website version of pointer computer
 
 ## Usage
-- npm init
-- npm install express --save
-
-run `node app.js`
+- install npm and another packages
+- `npm init`
+- `npm install express --save`
+- run the server
+- `node app.js`
 
 that's all.
