@@ -16,7 +16,7 @@
 	
 	<div class="container">
 	</div>
-	<div class="container" ng-app="myApp" ng-controller="myCtr">
+	<div class="container offset-md-2 col-md-8" ng-app="myApp" ng-controller="myCtr">
 		<p class="text-center text-info">输入胜者与败者的分数 </p>
 		<div class="container container-center">
 			<form role="form">
@@ -30,6 +30,7 @@
 			 	<input class="btn btn-warning" type="reset" value="重置" ng-click="reset()">
 			</form>
 		</div>
+		<br><br>
 		<div class="container container-center">
 			<div>
 				<p>{{winner}}  {{winnerGet}}</p>
@@ -41,5 +42,77 @@
 		
 	</div>
 
+	<br><br>
+	<div class="container">
+		<div class="container-center offset-md-2 col-md-8">
+			<p>CNTTR默认积分标准</p>
+			<table class="table-bordered">
+				<thead>
+					<tr>
+						<th>选手间积分差距</th>
+						<th>积分高者获胜（胜者加分/负者减分）</th>
+						<th>积分低者获胜（胜者加分/负者减分）</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>0-12</th>
+						<th>8</th>
+						<th>8</th>
+					</tr>
+					<tr>
+						<th>13-37</th>
+						<th>7</th>
+						<th>10</th>
+					</tr>
+					<tr>
+						<th>38-62</th>
+						<th>6</th>
+						<th>13</th>
+					</tr>
+					<tr>
+						<th>63-87</th>
+						<th>5</th>
+						<th>16</th>
+					</tr>
+					<tr>
+						<th>88-112</th>
+						<th>4</th>
+						<th>20</th>
+					</tr>
+					<tr>
+						<th>113-137</th>
+						<th>3</th>
+						<th>26</th>
+					</tr>
+					<tr>
+						<th>138-162</th>
+						<th>2</th>
+						<th>30</th>
+					</tr>
+					<tr>
+						<th>163-187</th>
+						<th>2</th>
+						<th>35</th>
+					</tr>
+					<tr>
+						<th>188-212</th>
+						<th>1</th>
+						<th>40</th>
+					</tr>
+					<tr>
+						<th>213-237</th>
+						<th>1</th>
+						<th>45</th>
+					</tr>
+					<tr>
+						<th>238以上</th>
+						<th>0</th>
+						<th>50</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 	</body>
 </html>
